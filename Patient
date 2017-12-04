@@ -1,0 +1,32 @@
+//program doesnt run
+
+package javaclassweek6;
+public class Patient 
+{
+    //3 variables
+    private int ID;
+    private int age;
+    private BloodData blood;  // an object inside from teh blood data class
+    public Patient() //defualt constructor (empty brackets  //first constructor
+    {
+        ID = 0;
+        age = 0;
+        blood = new BloodData(); //call default constructor   //an object blank is 0, o and +
+    }
+    
+    public Patient(int i, int a, String T, String R)  //second constructor 4 parts blood has two constructors in it already...
+    {
+        ID = i;
+        age = a;
+        blood = new BloodData(T, R);
+    }
+    
+    ///constructor gets rid of the setters
+    //3 getters
+    public int getID()
+    { return ID;}
+    public int getage()
+    { return age;} 
+    public BloodData getBloodData()
+    { return blood; }    
+}
