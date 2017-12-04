@@ -1,0 +1,34 @@
+package javaclassweek6;
+public class Billing 
+{
+    //3 overloaders
+    
+    public static double computeBill(double p) //first method (1 parameter) //p for price
+    {
+        double total = p + p*0.08;  //gets the price total=p+p*0.08
+        return total;  //return total price
+    }
+    
+    public static double computeBill(double p, int q) //second method (2 parameters) //quantity is an integer
+    {
+        double total = p * q + p *q* 0.08;
+        return total;
+    }
+    
+    public static double computeBill(double p, int q, double c) //third method (3 parameters) //c= coupon 20$
+    {
+        double totalPrice = p * q - c; //coupon is subtracted before the taxes
+        double total = totalPrice + totalPrice * 0.08;
+        return total;
+    }
+    
+    public static void main(String[] args) //main method
+    {
+        double x = computeBill (100); //call the first method  x is the variable to catch the return varaible
+        System.out.println("The first method returned " + x);
+        double y = computeBill (100,5); //call the second method  y is the variable to catch the return varaible
+        System.out.println("The second method returned " + y);
+        double z = computeBill (100,5,20); //call the third method  z is the variable to catch the return varaible
+        System.out.println("The third method returned " + z);
+    }
+}
