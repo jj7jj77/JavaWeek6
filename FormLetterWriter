@@ -1,0 +1,23 @@
+package javaclassweek6;
+public class FormLetterWriter 
+{
+    //two methods working together main and the other two methods
+    
+    public static void main(String[] args) //first method
+    {
+       displaySalutation("Katz"); //call the first method with one parameter
+       displaySalutation("Julia", "Katz");  // call the second method with two parameters
+    }
+    
+    public static void displaySalutation(String s)  //First brother(public) (parameter of 1 type string
+    {
+        System.out.println("Dear Mr. or Mrs. " + s); //one line method
+        System.out.println("Thank you for your recent order");
+    }
+    
+    public static void displaySalutation(String f, String l) //Second brother (two parameters)
+    {
+        System.out.println("Dear " + f + " " + l); //first name and last name
+        System.out.println("Thank you for your recent order");
+    }
+}
