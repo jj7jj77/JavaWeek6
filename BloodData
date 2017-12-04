@@ -1,0 +1,34 @@
+//default: has no parameters
+//one with one parameters
+//one with zero parameters
+
+package javaclassweek6;
+public class BloodData
+{
+    private String Type;  //creating constructo
+    private String Rh;
+    
+    public BloodData()   //method first constructor: no parameters
+    {
+        Type = "O";
+        Rh = "+";
+    }
+    
+    public BloodData(String T, String R)   //other consturtor with two parameter
+    {
+        Type = T;
+        Rh = R; // the two methods
+    }
+
+    //getters (2) return a string
+    public String getType()
+    {return Type;}
+    public String getRh()
+    {return Rh;}
+
+    //setters: are void
+    public void setType(String T)
+    {Type = T;}
+    public void setRh(String R)
+    {Rh = R;}
+}
