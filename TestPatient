@@ -1,0 +1,26 @@
+//one object inside the others 
+//2 levels
+
+package javaclassweek6;
+public class TestPatient
+{
+    public static void main (String[] args)
+    {
+         //create 2 constructors (2 patients)
+        Patient P1 = new Patient();
+        Patient P2 = new Patient(14, 94, "A", "-");  //give 4 values ID, age blood rh
+     
+        //test the 3 getters on P2
+        int x = P2.getID();   //get back 14
+        int y = P2.getage();  //get back 94
+        BloodData b = P2.getBloodData();  //get back blood type and rh  cant print b: is a complex type
+     
+        //break up b: make two more variables
+        String z = b.getType(); //first part of type  //should be A
+        String w = b.getRh();  //second part of rh  //should be -
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        System.out.println("w = " + w);
+    }
+}
