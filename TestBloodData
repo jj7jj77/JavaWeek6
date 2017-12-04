@@ -1,0 +1,22 @@
+//2 constructor
+//2 getters
+//2 setters
+
+package javaclassweek6;
+public class TestBloodData 
+{
+     public static void main(String[] args)
+     {
+         BloodData B1 = new BloodData();     //test consturctors  leave it blank: variables are o and +
+         BloodData B2 = new BloodData( "AB", "-"); //tested constructors
+         String x = B1.getType(); //getters ... give you O 
+         String y = B2.getRh();   // get a -
+         System.out.println("x= " + x + " y= " + y);
+         
+         B1.setType("A");    //setters: changing the values
+         B1.setRh("-");
+         x = B1.getType();
+         y = B1.getRh();
+         System.out.println("x= " + x + " y= " + y);
+     }
+}
