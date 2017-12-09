@@ -1,0 +1,64 @@
+package javahomeworkweek6;
+import java.time.LocalDate;
+public class CertOfDeposit 
+{
+    private int CertNumber;
+    private String LastName;
+    private double Balance;
+    private LocalDate IssueDate;
+    private LocalDate MaturityDate = IssueDate.plusYears(1);
+    
+    //public CertOfDeposit()
+    public CertOfDeposit(int CN, String LN, double B, LocalDate ID)
+    {
+        CertNumber = CN;
+        LastName = LN;
+        Balance = B;
+        IssueDate = ID;
+        MaturityDate = LocalDate.of(IssueDate.getYear()+1, IssueDate.getMonth(), IssueDate.getDayOfMonth());
+    }
+        
+    //get methods
+    public int getCertificateNumber() 
+    {
+        return CertNumber;
+    }
+    public String getLastName() 
+    {
+        return LastName;
+    }
+    public double getBalance() 
+    {
+        return Balance;
+    }
+    public LocalDate getIssueDate() 
+    {
+        return IssueDate;
+    }
+    public LocalDate getMaturityDate() 
+    {
+        return MaturityDate;
+    }
+    
+    //set methods
+    public void setCertificateNumber(int CN)
+    {
+        CertNumber = CN;
+    }
+    public void setLastName(String LN)
+    {
+        LastName = LN;   
+    }
+    public void setBalance(double B)
+    {
+        Balance = B;
+    }
+    public void setIssueDate(LocalDate ID)
+    {
+        IssueDate = ID;
+    }
+    public void setMaturityDate(LocalDate MD)
+    {
+        MaturityDate = MD;
+    }
+}
