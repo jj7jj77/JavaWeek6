@@ -1,0 +1,24 @@
+package javaclassweek6;
+public class TestCircle
+{
+    public static void main(String[] args)
+    {
+        Circle C1 = new Circle(); //constructors
+        C1.setRadius(5);   //set to 5
+
+        Circle C2 = new Circle();
+        C2.setRadius(20);  //set to 20
+
+        Circle C3 = new Circle(); //default sets automatically
+        
+        //getters
+        double x = C1.getRadius();
+        double y = C2.getRadius();
+        double z = C3.getRadius();
+        
+        //print the radius
+        System.out.println("The radius of the C1 is " + x);
+        System.out.println("The radius of the C1 is " + y);
+        System.out.println("The radius of the C1 is " + z);
+    }
+}
