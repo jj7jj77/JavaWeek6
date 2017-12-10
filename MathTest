@@ -1,0 +1,42 @@
+package javahomeworkweek6;
+public class MathTest 
+{
+    public double SquareRoot(double sqrt)
+    {
+        return Math.sqrt(sqrt);
+    }
+    public double cosValue(double cos)
+    {
+        return Math.cos(cos);
+    }
+    public double sinValue(double sin)
+    {
+        return Math.sin(sin);
+    }
+    public double floorValue(double f)
+    {
+        return Math.floor(f);
+    }
+    public double ceilValue(double c)
+    {
+        return Math.ceil(c);
+    }
+    public double roundValue(double r)
+    {
+        return Math.round(r);
+    }
+    public int MaxOfTwoValue(int ch, int num)
+    {
+        return Math.max(ch,num);
+    }
+    public int MinOfTwoValue(int ch, int num)
+    {
+        return Math.min(ch, num);
+    }
+    public double randomValue(int num1, int num2)
+    {
+        num1 = (int)(Math.random()*(20));
+        num2 = (int)(Math.random()*(20));
+        return (int)(Math.random()*(20));
+    }
+}
