@@ -1,0 +1,26 @@
+package javahomeworkweek6;
+public class TestMathTest 
+{
+    public static void main(String[] args) 
+    {
+        MathTest Math = new MathTest();
+        
+        System.out.println("The Square Root of 37 is: " + Math.SquareRoot(37));
+
+        System.out.println("The Sine of 300 is: " + Math.sinValue(300));
+
+        System.out.println("The Cosine of 300 is: " + Math.cosValue(300));
+
+        System.out.println("The Floor of 22.8 is: " + Math.floorValue(22.8));
+
+        System.out.println("The Ceiling of 22.8 is: " + Math.ceilValue(22.8));
+
+        System.out.println("The Round of 22.8 is: " + Math.roundValue(22.8));
+
+        System.out.println("The Larger of D and 71 is: " + Math.MaxOfTwoValue('D',71));
+
+        System.out.println("The Smaller of D and 71 is: " + Math.MinOfTwoValue('D',71));
+
+        System.out.println("A Random number between 0 and 20 is: " + (int)(Math.randomValue(0,20)));
+    }
+}
