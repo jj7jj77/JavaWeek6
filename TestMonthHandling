@@ -1,0 +1,38 @@
+package javahomeworkweek6;
+import java.time.LocalDate;
+public class TestMonthHandling 
+{
+    public static void main(String[] args) 
+    {
+        LocalDate January31 = LocalDate.of(2017, 1, 31);
+        System.out.println("The current date is " + January31);
+        January31 = January31.plusMonths(1);
+        System.out.println("After 1 month");
+        System.out.println(January31);
+        
+        System.out.println("After 2 months");
+        January31 = January31.plusMonths(2);
+        System.out.println(January31);
+        
+        System.out.println("After 3 months");
+        January31 = January31.plusMonths(3);
+        System.out.println(January31); 
+        
+        System.out.println();
+        
+        LocalDate December31 = LocalDate.of(2017, 12, 31);
+        System.out.println("The current date is " + December31); 
+        
+        December31 = December31.plusMonths(1);
+        System.out.println("After 1 month");
+        System.out.println(December31);
+        
+        December31 = December31.plusMonths(2);
+        System.out.println("After 2 months");
+        System.out.println(December31);
+        
+        December31 = December31.plusMonths(3);
+        System.out.println("After 3 months");
+        System.out.println(December31);
+    }
+}
