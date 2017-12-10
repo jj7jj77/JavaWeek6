@@ -1,0 +1,38 @@
+package javahomeworkweek6;
+import java.util.Scanner;
+//import java.time.LocalDate;
+public class TestCertOfDeposit 
+{
+   public static void main(String[] args)
+   {
+  public class CertOfDeposit(int CN, String LN, double B, LocalDate ID)
+   {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter Certificate Number: ");
+        CN = input.nextInt();
+        
+        System.out.print("Enter Last Name: ");
+        String LN = input.next();
+        
+        System.out.print("Enter Balance: ");
+        B = input.nextDouble();
+        
+        System.out.print("Enter the Current Issue Date: ");
+        int Day = input.nextInt();
+        
+        System.out.print("Enter the Current Issue Month: ");
+        int Month = input.nextInt();
+        
+        System.out.print("Enter the Current Issue Year: ");
+        int Year = input.nextInt();
+        //LocalDate issueDate = LocalDate.of(Month, Day, Year);
+        //issueDate = LocalDate.of(Month, Day, Year); //<--this  and do i need it?
+        
+        System.out.println("Certificate Number: " + CN); //<--this way it is showing me red here?
+        System.out.println("Name: " + LN);
+        System.out.println("Balance: " + B);
+        //System.out.println("Issue Date: " + ID);
+        //System.out.println("Maturity Date: " + MD);
+     }    
+}
