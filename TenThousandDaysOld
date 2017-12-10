@@ -1,0 +1,13 @@
+package javahomeworkweek6;
+import java.time.LocalDate;
+public class TenThousandDaysOld 
+{
+    public static void main(String[] args) 
+    {
+        LocalDate today = LocalDate.now();
+        int Days = 10000;
+        LocalDate FutureDate = today.plusDays(Days);
+        System.out.println("The Current Date is " + today);
+        System.out.println("the Future Date after " + Days + " is " + FutureDate);
+    }
+}
