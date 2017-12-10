@@ -1,0 +1,19 @@
+package javahomeworkweek6;
+import java.time.LocalDate;
+public class DaysTilNextMonth 
+{
+    public static void main(String[] args) 
+    {
+        LocalDate CurrentDate = LocalDate.now();
+        int DayofMonth = CurrentDate.getDayOfMonth();
+        
+        int DaysinMonth = CurrentDate.lengthOfMonth();
+        System.out.println("The Current Date is: " + CurrentDate);
+        
+        int DaysLeft = DaysinMonth - DayofMonth;
+        System.out.println("Days left til the next month: " + DaysLeft);
+        
+        LocalDate nextMonth = CurrentDate.plusDays(DaysLeft +1);
+        System.out.println("The name of the next month is: " + nextMonth.getMonth());        
+    }
+}
